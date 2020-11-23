@@ -1,0 +1,4 @@
+tmux
+vim 
+python3-pip
+
