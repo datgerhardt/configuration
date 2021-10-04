@@ -21,8 +21,6 @@ if &term =~ '^screen'
     set ttymouse=xterm2
 endif
 
-
-
 " Avoiding arrows keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -33,7 +31,6 @@ inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
-
 
 " Split navigation
 nnoremap <C-J> <C-W><C-J>
@@ -49,9 +46,14 @@ set smartcase
 
 highlight Comment ctermfg=green
 
+" Setting path Provide to tab-completion all file-related tasks 
+set path+=**
+
+" Display all matching file during tab complete
+set wildmenu
+
 " Disable stupid backup and swap files - they trigger too many events
 " for file system watchers
 set nobackup
 set nowritebackup
 set noswapfile
-
